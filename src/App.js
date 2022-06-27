@@ -1,4 +1,5 @@
 import "./App.css";
+import Counter from "./Counter";
 import Listing from "./Listing";
 const listings = [
   {
@@ -16,6 +17,7 @@ const listings = [
 function App() {
   return (
     <div className="App">
+      <Counter />
       {listings.map((listing, index) => (
         <Listing
           title={listing.title}
